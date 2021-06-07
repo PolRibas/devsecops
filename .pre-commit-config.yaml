@@ -1,0 +1,13 @@
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.4.0  # Use the ref you want to point at
+    hooks:
+    # comprueba que cumplimos flake8 (linter)
+    -   id: flake8
+    # comprueba que no subimos archivos grandes al repo
+    -   id: check-added-large-files
+    # comprueba que los archivos se parsean como python válido
+    -   id: check-ast
+    # comprueba que no subimos trailing whitespaces
+    -   id: trailing-whitespace
+    # comprueba que no subimos una llave privada
+    -   id: detect-private-key
